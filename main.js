@@ -18,41 +18,41 @@ document.addEventListener('DOMContentLoaded', function ()
 
     document.addEventListener('keydown', function (e)
     {
-        // if (e.key === 'F12')
-        // {
-        //     e.preventDefault();
-        //     return false;
-        // }
-        // if (e.ctrlKey && e.shiftKey && e.key === 'I')
-        // {
-        //     e.preventDefault();
-        //     return false;
-        // }
-        // if (e.ctrlKey && e.shiftKey && e.key === 'J')
-        // {
-        //     e.preventDefault();
-        //     return false;
-        // }
-        // if (e.ctrlKey && e.key === 'u')
-        // {
-        //     e.preventDefault();
-        //     return false;
-        // }
-        // if (e.ctrlKey && e.shiftKey && e.key === 'C')
-        // {
-        //     e.preventDefault();
-        //     return false;
-        // }
-        // if (e.ctrlKey && e.key === 's')
-        // {
-        //     e.preventDefault();
-        //     return false;
-        // }
-        // if (e.ctrlKey && e.key === 'p')
-        // {
-        //     e.preventDefault();
-        //     return false;
-        // }
+        if (e.key === 'F12')
+        {
+            e.preventDefault();
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key === 'I')
+        {
+            e.preventDefault();
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key === 'J')
+        {
+            e.preventDefault();
+            return false;
+        }
+        if (e.ctrlKey && e.key === 'u')
+        {
+            e.preventDefault();
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key === 'C')
+        {
+            e.preventDefault();
+            return false;
+        }
+        if (e.ctrlKey && e.key === 's')
+        {
+            e.preventDefault();
+            return false;
+        }
+        if (e.ctrlKey && e.key === 'p')
+        {
+            e.preventDefault();
+            return false;
+        }
     });
 });
 let UnityInstance = null;
