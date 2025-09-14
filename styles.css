@@ -1,0 +1,160 @@
+*
+{
+    image-rendering: pixelated;
+    cursor: url('res/img/cursor.png'), auto;
+}
+
+body
+{
+    background-image: url('res/img/bg1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100vh;
+    align-items: center;
+    animation: background-switch 10s infinite steps(1, end);
+}
+
+#titleimage
+{
+    scale: 150%;
+    z-index: -1;
+}
+
+#gameButton
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: white;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    background-image: url('res/img/button_unlit.png');
+    background-size: cover;
+    border: 0;
+    outline: solid 1px white;
+}
+
+#gameButton:hover
+{
+    background-image: url('res/img/button_lit.png');
+}
+
+#input-elements
+{
+    margin-top: 25px;
+    display: flex;
+}
+
+#code-input
+{
+    background-image: url('res/img/inputfield.png');
+    background-size: cover;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+#input-ok
+{
+    background-image: url('res/img/ok_button.png');
+    background-size: cover;
+    width: 30px;
+    height: 21px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+#unity-canvas
+{
+    border: 0;
+    outline: 0;
+}
+
+@keyframes background-switch
+{
+    0%
+    {
+        background-image: url('res/img/bg1.png');
+    }
+
+    20%
+    {
+        background-image: url('res/img/bg2.png');
+    }
+
+    40%
+    {
+        background-image: url('res/img/bg3.png');
+    }
+
+    60%
+    {
+        background-image: url('res/img/bg4.png');
+    }
+
+    80%
+    {
+        background-image: url('res/img/bg5.png');
+    }
+
+    100%
+    {
+        background-image: url('res/img/bg1.png');
+    }
+}
+
+.nodrag
+{
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+input,
+textarea,
+[contenteditable]
+{
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.center-div
+{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.center-x
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-y
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}

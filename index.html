@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://blayms.github.io/about-me/" />
+    <meta property="og:description" content="God sounds" />
+    <meta property="og:image" content="https://file.garden/Z-1IetWhPAglb4Fv/blayms_full.png" />
+    <meta property="og:title" content="777" />
+    <meta property="og:type" content="website" />
+    <title>777 | Drum Kit</title>
+    <link rel="icon" type="image/png" href="res/ico/icon.png" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nodrag">
+    <div class="center-div" id="main-div">
+        <img id="titleimage" class="center-x nodrag" src="res/img/777.gif" />
+        <button id="gameButton">access</button>
+        <div id="input-elements">
+            <input id="code-input" placeholder="enter code..."></input> <button id="input-ok"></button>
+        </div>
+    </div>
+
+    <div class="center-div" id="game-div" style="display: none;">
+        <canvas id="unity-canvas" width=800 height=600 tabindex="-1"
+            style="width: 800px; height: 600px; background: black;"></canvas>
+    </div>
+
+    <audio id="song" src="res/audio/beat.mp3" loop="loop" preload="auto"></audio>
+    <audio id="sfx" src="res/audio/error.wav" preload="auto"></audio>
+    <div id="game-scripts"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
